@@ -6,13 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Convention Center</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <style>
+        section {
+            margin-top: 75px;
+            margin-bottom: 200px;
+        }
+        
+        button {
+            font-weight: 700;
+            font-size: 1.5em;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <span>
+                    <a class="navbar-brand" href="#">Abacus Convention Center</a>   
+            </span>
+            <span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span> <img src="icons/menu.svg" alt=""></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Subscribe</a>
+                    </li>
+                </ul>
+            </div>
+            </span>
+        </div>
+    </nav>
 
-    <div id="carouselCaptions" class="carousel slide" data-bs-ride="false">
+
+    <div id="carouselCaptions" class="carousel slide my-10" data-bs-ride="false">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -21,31 +64,38 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="images/banner-1.png" class="d-block w-100 img-fluid" style=" height: 584px;" alt="...">
+                <img src="images/banner-1.png" class="d-block w-100 img-fluid" style=" height: 500px;" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <h1>The perfect venue for your next event</h1>
+                    <p>Some representative placeholder content.</p>
+                    <button class="rounded px-5 text-primary" type="button">Book Now</button>
                 </div>
             </div>
+
             <div class="carousel-item">
-                <img src="images/banner-2.jpg" class="d-block w-100 img-fluid" style=" height: 584px;" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
+                <img src="images/banner-2.jpg" class="d-block w-100 img-fluid" style=" height: 500px;" alt="...">
+                <div class="carousel-caption d-none d-md-block bg-secondary bg-opacity-50">
+                    <h1>The perfect venue for your next even</h1>
+                    <p>Some representati.</p>
+                    <button class="bg-primary rounded px-5 text-white" type="button">Book Now</button>
                 </div>
             </div>
+
             <div class="carousel-item">
-                <img src="images/banner-3.jpg" class="d-block w-100 img-fluid" style=" height: 584px;" alt="...">
+                <img src="images/banner-3.jpg" class="d-block w-100 img-fluid" style=" height: 500px;" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
+                    <h1>The perfect venue for your next even</h1>
+                    <p>Some representative placeholder content.</p>
+                    <button class="rounded px-5 text-primary" type="button">Book Now</button>
                 </div>
             </div>
+
             <div class="carousel-item">
-                <img src="images/banner-4.jpg" class="d-block w-100 img-fluid" style=" height: 584px;" alt="...">
+                <img src="images/banner-4.jpg" class="d-block w-100 img-fluid" style=" height: 500px;" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Fourth slide label</h5>
-                    <p>Some representative placeholder content for the fourth slide.</p>
+                    <h1>The perfect venue for your next even</h1>
+                    <p>Some representative placeholder content.</p>
+                    <button class="rounded px-5 text-primary" type="button">Book Now</button>
                 </div>
             </div>
         </div>
@@ -60,6 +110,96 @@
           <span class="visually-hidden">Next</span>
         </button>
     </div>
+
+    <section class="precious-moment d-flex flex-row justify-content-around align-self-center m-5">
+        <div>
+            <img class="img-fluid" style="height:360px; width: 500px;" src="images/wedding-2.jpg" alt="">
+        </div>
+        <div class=" align-self-center ">
+            <h5>Every moment is Precious</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, ad?'</p>
+            <button class="rounded px-5"><a href="">Explore our album 
+                <img  style="height:14px; width:16px" src="icons/ctor.svg " alt=""></a></button>
+
+        </div>
+        <div class="toast align-items-center text-bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body"><img style="height:14px; width:16px" src="icons/Vector.svg " alt=""> 20% off on next booking!
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="our-package">
+        <h1 style="text-align: center;">Our Packages</h1>
+        <div class="packages d-flex flex-row justify-content-between align-items-center m-5 p-2">
+
+            <div class="p-5">
+                <h1>$300</h1>
+                <h3>Business fair</h3>
+                <p>For most businesses event like book fair, craft fair.</p>
+                <ul>
+                    <li>limited space access</li>
+                    <li>Secuirty facility</li>
+                    <li>Event support</li>
+                    <li>Decoration design</li>
+                    <li>Per day bill</li>
+                </ul>
+                <button class="btn btn-light text-primary px-5 rounded-pill ">Choose plan</button>
+            </div>
+
+            <div class="p-5 ">
+                <h1>$500</h1>
+                <h3>wedding basic</h3>
+                <p>For weddings with basic plan and limited item</p>
+                <ul>
+                    <li>Full space access</li>
+                    <li>Food arrangement</li>
+                    <li>Mangement support</li>
+                    <li>Decoration design</li>
+                    <li>Billed as shift</li>
+                </ul>
+                <button class="btn btn-light text-primary px-5 rounded-pill ">Choose plan</button>
+            </div>
+
+            <div class="bg-primary text-white rounded-5 p-5 position-relative ">
+                <h1>$800</h1>
+                <h3>Wedding</h3>
+                <p>For most weddings with premium plans</p>
+                <ul>
+                    <li>Full space access</li>
+                    <li>Dedicated team</li>
+                    <li>Buffet food</li>
+                    <li>Premium Decoration</li>
+                    <li>Pay as plan</li>
+                </ul>
+                <button class="btn btn-light text-primary px-5 rounded-pill ">Choose plan</button>
+
+                <span class="position-absolute top-0 start-75 translate-middle badge rounded-pill bg-danger ">
+                hot
+                <span class="visually-hidden ">unread messages</span>
+                </span>
+            </div>
+
+            <div class="p-5 ">
+                <h1>$1200</h1>
+                <h3>Corporate event</h3>
+                <p>For most corporate business events
+                </p>
+                <ul>
+                    <li>Full space access</li>
+                    <li>Dedicated team</li>
+                    <li>Buffet food</li>
+                    <li>premium Decoration</li>
+                    <li>Pay as plan</li>
+                </ul>
+                <button class="btn btn-light text-primary px-5 rounded-pill ">Choose plan</button>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa " crossorigin="anonymous "></script>
 </body>
 
 </html>
